@@ -1,0 +1,26 @@
+reruns: 2  # 失败重跑次数
+
+# 格式：[设备, 运行模式, 运行参数]
+run_args: [
+    # ['redmi_note2', '-m', 'zjys or lssy'],
+    # ['chuizi_2', '-m', 'gxyj2'],
+    # ['meilan_6', '-m', 'clys2'],
+    # ['yeshen1', '-m', 'gxysv2'],
+    # ['yeshen2', '-m', 'clys1 or zljc'],
+    # ['yeshen3', '-m', 'bssy or gxysv1'],
+    # ['yeshen4', '-m', 'aqjc or xcjc'],
+    # ['yeshen5', '-m', 'gxyj1'],
+    ['yeshen1', '-m', 'gxysv2 or clys2'],
+    ['yeshen2', '-m', 'ybgl or clys1 or gxysv1'],
+    ['yeshen3', '-m', 'bssy or lssy or zjys or jdgl'],
+    ['yeshen4', '-m', 'aqjc or xcjc or zljc'],
+    ['yeshen5', '-m', 'gxyj1 or gxyj2'],
+    # ['chuizi_2', '--dir', 'Gxyj/test_region_send_back.py'],
+    # ['meilan_6', '-m', 'lssy'],
+    # ['redmi_note2', '--dir', 'Gxyj/test_check_problem.py']
+#    ['yeshen1', '-m', 'login'],
+#    ['yeshen2', '-m', 'login'],
+#    ['yeshen3', '-m', 'login'],
+#    ['yeshen4', '-m', 'bssy'],
+#    ['yeshen5', '-m', 'lssy'],
+]

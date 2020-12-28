@@ -1,0 +1,32 @@
+----------ChromeDriver v2.12 (2014-10-27)----------
+Supports Chrome v36-40
+
+----------ChromeDriver v2.15 (2015-03-26)----------
+Supports Chrome v40-43
+
+----------ChromeDriver v2.20 (2015-10-08)----------
+Supports Chrome v43-48
+
+----------ChromeDriver v2.22 (2016-06-06)----------
+Supports Chrome v49-52
+
+----------ChromeDriver v2.26 (2016-12-09)----------
+Supports Chrome v53-55
+
+----------ChromeDriver v2.29 (2017-04-04)----------
+Supports Chrome v56-58
+
+----------ChromeDriver v2.32 (2017-08-30)----------
+Supports Chrome v59-61
+
+----------ChromeDriver v2.35 (2018-01-10)----------
+Supports Chrome v62-64
+
+----------ChromeDriver v2.38 (2018-04-17)----------
+Supports Chrome v65-67
+
+----------ChromeDriver v2.42 (2018-09-13)----------
+Supports Chrome v68-70
+
+----------ChromeDriver v2.46 (2019-02-01)----------
+Supports Chrome v71-73

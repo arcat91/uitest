@@ -1,0 +1,74 @@
+# 必填，产品，使用run_xx.py执行用例时，不从这里取数
+product: 'ydzj'
+# 必填，环境，使用run_xx.py执行用例时，不从这里取数
+env: 'prod'
+# 必填，设备别名，使用run_xx.py执行用例时，不从这里取数
+device_alias: 'yeshen1'
+# 必填，app包文件名，需要将文件存放在/app_pkg/
+app:
+  test: "ydzj_3.1.7_test_new.apk"
+  prod: "ydzj_3.1.7_dist.apk"
+# 必填，app是否重置，True/False
+app_reset: True
+
+# 非必填（自定义项），默认基础数据
+default_basic_data:
+  company: 'UI自动化测试公司'
+  project: 'UI自动化测试项目'
+  phase: '一期'
+  bidsec: '测试标段1'
+  building: '测试1栋'
+  contractor1: '马可波罗'
+  contractor2: '中建三局'
+
+# 非必填（自定义项），登录信息
+login_info:
+  test:  # 测试环境
+    corp_id: apitest  # 企业代码
+    u_p:  # 用户名:密码
+      apitest: [passwd, '超级用户']  # 默认首位为超管账号密码
+      ui_js1: [passwd, 'ui_建设1']  # 建设
+      ui_js2: [passwd, 'ui_建设2']  # 建设
+      ui_jl1: [passwd, 'ui_监理1']  # 监理
+      ui_jl2: [passwd, 'ui_监理2']  # 监理
+      ui_sg1: [passwd, 'ui_施工1']  # 施工
+      ui_sg2: [passwd, 'ui_施工2']  # 施工
+  prod:  # 生产环境
+    corp_id: apitest
+    u_p:
+      apitest: [passwd, '超级用户']  # 默认首位为超管账号密码
+      ui_js1: [passwd, 'ui_建设1']  # 建设
+      ui_js2: [passwd, 'ui_建设2']  # 建设
+      ui_jl1: [passwd, 'ui_监理1']  # 监理
+      ui_jl2: [passwd, 'ui_监理2']  # 监理
+      ui_sg1: [passwd, 'ui_施工1']  # 施工
+      ui_sg2: [passwd, 'ui_施工2']  # 施工
+
+# 必填，报告
+report_name: '移动质检自动化测试'
+
+# 必填，邮件
+email:
+  host: "smtp.exmail.qq.com"
+  user: "xxx@mingyuanyun.com"
+  password: "passwd"
+  port: "465"
+  to_addr: ["huangyj02@mingyuanyun.com"]
+  cc_addr: ["huangyj02@mingyuanyun.com"]
+  subject: "移动质检"
+
+# 必填，数据库连接配置
+mysql_link:
+  test:
+    host: "xxx.mysql.rds.aliyuncs.com"
+    port: "3306"
+    user: "user"
+    pwd: "passwd"
+    db_name: "mycommunity_apitest"
+  prod:
+    host: "xxx.rwlb.rds.aliyuncs.com"
+    port: "3306"
+    user: "user"
+    pwd: "passwdR"
+    db_name: "mycommunity_apitest"
+

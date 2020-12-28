@@ -1,0 +1,15 @@
+*.pyc
+*.log
+*.html
+.idea/
+__pycache__/
+build/
+dist/
+poium.egg-info/
+logs/
+report/
+debug/
+!report_template.html
+*.bak
+*.dat
+*.dir

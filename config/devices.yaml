@@ -1,0 +1,212 @@
+# appium服务地址
+appium_server: 'localhost'
+
+# 配置样例
+# device_alias 设备别名
+meizu_metal:
+  # 必填，adb有线连接展示的连接名称（即设备SN）
+  deviceName: "A10EBMM2D722"
+  # 非必填，adb无线连接展示的连接名称（即ip:port），支持多个ip地址，列表形式
+  device_address:
+    - "10.8.70.139:6666"
+  # 必填，自动化引擎，默认为Appium
+  automationName: "Appium"
+  # 必填，平台名称，Android/IOS
+  platformName: "Android"
+  # 非必填，app包名，不填则根据app包自动获取
+  appPackage: "com.mysoft.checkqualitytest"
+  # 非必填，app启动入口，不填则根据app包自动获取
+  appActivity: "com.mysoft.core.activity.DaemonActivity"
+  # 非必填，appium的连接端口(非自启动appium服务时需要指定端口；自启动时将自动选择)
+  appium_port: 4723
+
+chuizi:
+  deviceName: "17d8c492"
+  device_address:
+    - "10.8.70.144:6666"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: ""
+
+emulator-5554:
+  deviceName: "emulator-5554"
+  device_address:
+  platformVersion: "5.1.1"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: 4723
+
+oppo_r9sk:
+  deviceName: "5cf1de7f"
+  device_address:
+    -
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: 4723
+
+emulator-zhl:
+  deviceName: "127.0.0.1:21513"
+  device_address:
+    -
+  platformVersion: "7.1.2"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: "com.mysoft.checkqualitytest"
+  appActivity: "com.mysoft.core.activity.DaemonActivity"
+  appium_port: 4723
+
+oppo_1:
+  deviceName: "127.0.0.1:7555"
+  device_address:
+    - ""
+  automationName: "uiautomator2"
+  platformName: "Android"
+  appPackage: "com.mysoft.engineertooltest"
+  appActivity: "com.mysoft.core.activity.DaemonActivity"
+  appium_port: 4725
+
+yeshen:
+  deviceName: "127.0.0.1:62001"
+  device_address:
+    - ""
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: 4723
+
+xiaomi_9:
+  deviceName: "8811e5e1"
+  device_address:
+    - ""
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: 4723
+
+MEIZU_1:
+  deviceName: "A10EBMM2D722"
+  device_address:
+    - ""
+  automationName: "uiautomator2"
+  platformName: "Android"
+  appPackage: "com.mysoft.engineertooltest"
+  appActivity: "com.mysoft.core.activity.DaemonActivity"
+  appium_port: 4725
+
+xiaomi_1:
+  deviceName: "6a236f23"
+  device_address:
+    - ""
+  automationName: "uiautomator2"
+  platformName: "Android"
+  appPackage: "com.mysoft.engineertooltest"
+  appActivity: "com.mysoft.core.activity.DaemonActivity"
+  appium_port: 4723
+
+xiaomi_note:
+  deviceName: "c70ce074"
+  device_address:
+    - ""
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: 4723
+
+meilan_6:
+  deviceName: "711QECSN2852N"
+  device_address:
+    - "10.8.71.136:6666"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: ""
+
+oppo_a59m:
+  deviceName: "FAPVK7VO99999999"
+  device_address:
+    - "10.8.70.170:6666"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: 4723
+
+redmi_note2:
+  deviceName: "9PJJAAYHKJQCW8UW"
+  device_address:
+    - "10.8.70.147:6666"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: 4762
+
+yeshen1:
+  deviceName: "127.0.0.1:62001"
+  device_address:
+    - "10.8.1.103:5555"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: '4750'
+
+yeshen2:
+  deviceName: "127.0.0.1:62025"
+  device_address:
+    - "10.8.1.105:5555"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: "4751"
+
+yeshen3:
+  deviceName: "127.0.0.1:62026"
+  device_address:
+    - "10.8.1.106:5555"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: "4752"
+
+yeshen4:
+  deviceName: "127.0.0.1:62027"
+  device_address:
+    - "10.8.1.107:5555"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: "4753"
+
+yeshen5:
+  deviceName: "127.0.0.1:620278"
+  device_address:
+    - "10.8.1.108:5555"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: "4754"
+
+yeshen6:
+  deviceName: "127.0.0.1:62029"
+  device_address:
+    - "10.8.1.104:5555"
+  automationName: "Appium"
+  platformName: "Android"
+  appPackage: ""
+  appActivity: ""
+  appium_port: "4755"
