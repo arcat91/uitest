@@ -45,27 +45,6 @@ def run_test():
         return '不支持该命令，请重新输入(当前仅支持%s)' % str(valid_re_list)
 
 
-# 根据参数生成签名(公共组使用)
-# 1、将待签名参数按照 ASCII 码顺序从小到大排序（字典序排序）
-# 2、按照 URL params 的格式（key1=value1&key2=value2&key3=value3）拼接成一个字符串 beforeSignStr，不需要对字符串进行 URL 转义
-# 3、对字符串 beforeSignStr 进行 sha1 加密得到签名 signature
-@app.route('/gen_signature', methods=['Post'])
-def gen_signature():
-    data = request.get_data()
-    data = loads(data)
-    print(data)
-    dict_data = dict(data)
-    extract_keys = list(dict_data.keys())
-    sort_keys = sorted(extract_keys)
-    str_list = []
-    for key in sort_keys:
-        str_list.append(f'{key}=' + str(dict_data[key]))
-    con_str = '&'.join(str_list)
-    sha = sha1(con_str.encode('utf-8'))
-    encrypts = sha.hexdigest()
-    return str(encrypts)
-
-
 # 将运维平台的信息转发
 @app.route('/save_content', methods=['Post'])
 def save_mail_content():
