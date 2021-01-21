@@ -45,23 +45,5 @@ def run_test():
         return '不支持该命令，请重新输入(当前仅支持%s)' % str(valid_re_list)
 
 
-# 将运维平台的信息转发
-@app.route('/save_content', methods=['Post'])
-def save_mail_content():
-    args_content = request.form
-    print(args_content)
-    requests.post(url='http://10.8.60.114:5001/save_content', data=args_content)
-    return '保存成功'
-
-
-# 将运维平台的信息转发
-@app.route('/release_success', methods=['Post'])
-def release_trigger():
-    args_content = request.form
-    print(args_content)
-    requests.post(url='http://10.8.60.114:5001/release_success', data=args_content)
-    return '保存成功'
-
-
 if __name__ == '__main__':
     app.run(host='172.18.0.118', port=5003)
